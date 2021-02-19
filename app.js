@@ -28,6 +28,7 @@ setKeyButton.addEventListener('click', () => {
     multKey = keyArr[1];
     addKey = keyArr[2];
     keyInput.value = '';
+    keyDisplay.innerHTML = createKeyString(letterKey, multKey, addKey);
     setKeyButton.blur();
 });
 

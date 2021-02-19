@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cipher</title>
+</head>
+<body>
+    <div id="mainAppBody">
+        <div id="header">Enigma 0.5</div>
+        <p id="keyDisplay0">Key:</p>
+        <p id="keyDisplay"></p>
+        <button id="selectKey">Select Key</button>
+        <div id="setKeyBundle">
+            <input type="text" id="keyInput">
+            <button id="randomKeyButton">Random Key</button>
+            <button id="setKeyButton">Set Key</button>
+        </div>
+        <div id="inputTextBundle">
+            <p id="inputDirections">Input: </p>
+            <input type="text" id="inputText">
+            <button id="encipherText">Encipher Text</button>
+            <button id="decipherText">Decipher Text</button>
+        </div>
+        <p id="outputDirections">Output: </p>
+        <button id="selectOutput">Select All</button>
+        <button id="toInput">To Input</button>
+        <textarea id="outputText" cols="30" rows="10"></textarea>
+        <script src="constants.js"></script>
+        <!--Scripts-->
+        <script src="constants.js"></script>
+        <script src="cipherLogicFuncs.js"></script>
+        <script src="unitTest.js"></script>
+        <script src="app.js"></script>
+        <!--/Scripts-->
+    </div>
+</body>
+</html>

@@ -17,6 +17,7 @@ setRandomKeyButton.addEventListener('click', () => {
     multKey = genNumKeyMult();
     addKey = genNumKeyAdd();
     keyDisplay.innerHTML = createKeyString(letterKey, multKey, addKey);
+    keyInput.value = '';
     setRandomKeyButton.blur();
 });
 

@@ -2,3 +2,17 @@ const chars = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 
 var letterKey = '';
 var multKey = 0;
 var addKey = 0;
+
+//HTML DOM vars
+const setRandomKeyButton = document.getElementById('randomKeyButton');
+const keyDisplay = document.getElementById('keyDisplay');
+const keyInput = document.getElementById('keyInput');
+const setKeyButton = document.getElementById('setKeyButton');
+
+const inputText = document.getElementById('inputText');
+const encipherText = document.getElementById('encipherText');
+const decipherText = document.getElementById('decipherText');
+const outputText = document.getElementById('outputText');
+const selectOutput = document.getElementById('selectOutput');
+const toInput = document.getElementById('toInput');
+const selectKey = document.getElementById('selectKey');

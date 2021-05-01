@@ -1,6 +1,13 @@
 //check if key is valid
-var checkValidKey = (key) => {
+//keys:Array<> (from parsekey)
+//NOT IMPLIMENTED YET!!!
+var checkValidKey = (keys) => {
     //future feature
+    if (keys[0].length == 20 && keys[1] <= 83 && keys[2] <= 1000) {
+        return true;
+    } else {
+        return false;
+    };
 };
 
 //generate the keys for the number part of key
@@ -8,12 +15,14 @@ var genNumKeyMult = () => {
     return Math.floor(Math.random() * (83 - 1) + 1);
 };
 
+//generate the key for the rotation
 var genNumKeyAdd = () => {
     return Math.floor(Math.random() * (999 - 1) + 1);
 };
 
 //gen the key to switch letters around
-var genLetterKey = (arrChars) => {
+var genLetterKey = () => {
+    const arrChars = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "!", "@", "#", "$", "%", "^", "&", "*", "?", '.', ',', '_', ' ', '~', '`', '-', '+', "'", '"', ';', ':'];
     var res = '';
     var map = new Map();
     while (res.length < 20) {
@@ -41,6 +50,7 @@ var useLetterKey = (arrChars, key) => {
     return tempArr;
 };
 
+//parse displayed string into useable parts
 var parseKey = (string) => {
     let res = [];
     let temp = '';
